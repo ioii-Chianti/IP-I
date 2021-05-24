@@ -1,10 +1,10 @@
-#include<stdio.h>
-#include<string.h>
-#define max 100
+#include <stdio.h>
+#include <string.h>
+#define MAX 100
 
 int main() {
     int lenofA, lenofB, swapTag = 0, minusTag = 0;
-    char A[max], B[max];
+    char A[MAX], B[MAX];
     memset(A, '0', sizeof(A));
     memset(B, '0', sizeof(B));  
     scanf("%d %s %d %s", &lenofA, A, &lenofB, B);
@@ -41,7 +41,7 @@ int main() {
             B[i] = '0';
     }
 
-    int borrow = 0, ans[max] = {0};
+    int borrow = 0, ans[MAX] = {0};
     for (int i = lenofA - 1; i >= 0; i--) {
         int numA = A[i] - '0';
         int numB = B[i] - '0';
